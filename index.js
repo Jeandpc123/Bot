@@ -621,6 +621,11 @@ if (budy.includes("https://m.facebook.com/")){
 			switch(command) {
 		case 'help':
 		case 'menu':
+		uptime = process.uptime ()
+                putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
+                client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname2, time)})
+                break			
+					
 	        client.sendMessage(from, help(prefix, sender), text, {quoted: mek})
 		break
                 case 'otak':
