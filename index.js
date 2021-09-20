@@ -1194,13 +1194,7 @@ case 'pornhub':
                       break	
 				
 
-case 'map':
-                   data = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${body.slice(5)}`)
-                   hasil = await getBuffer(data.gambar)
-                   client.sendMessage(from, hasil, image, {quoted: mek, caption: `Resultados de *${body.slice(5)}*`})
-                   await limitAdd(sender)
-                   break
-	
+
 case 'grupoinfo':
                     client.updatePresence(from, Presence.composing)
                     if (!ownerNumber) return reply(mess.only.group)
