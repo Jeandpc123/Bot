@@ -1176,6 +1176,12 @@ case 'clonar':
 					}
 					break
 					
+case 'panda':
+team = await fetchJson (`https://api-team-of-hero.herokuapp.com/api/imagens/panda?apikey=apiteam`)
+buffer = await getBuffer(team.resultado)
+team.sendMessage(from, buffer, image, {quoted: mek, thumbnail: null})
+break
+					
 case 'pornhub':
                       if (args.length < 1) return reply('Cadê o texto?')
                       teks = body.slice(8)
