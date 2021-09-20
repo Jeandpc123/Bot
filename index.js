@@ -1159,7 +1159,33 @@ break
  reply('https://chat.whatsapp.com/'+linkgc)
  break
 					
-				
+case 'clonar':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Marque a pessoa que você quer clonar\n\n*EXEMPLO:* clone @')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
+					try {
+						pp = await client.getProfilePicture(id)
+						buffer = await getBuffer(pp)
+						client.updateProfilePicture(botNumber, buffer)
+						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
+					} catch (e) {
+						reply('Putz, deu erro, a pessoa deve estar sem foto 😔')
+					}
+					break
+					
+case 'pornhub':
+                      if (args.length < 1) return reply('Cadê o texto?')
+                      teks = body.slice(8)
+                      teks1 = teks.split("|")[0];
+                      teks2 = teks.split("|")[1];
+                      reply('[❗]ESPERE ...')
+                      team = await fetchJson(`https://api-team-of-hero.herokuapp.com/api/textpro/pornhub?apikey=apiteam&texto1=${teks1}&texto2=${teks2}`)
+                      buff = await getBuffer(team.resultado)
+                      team.sendMessage(from, buff, image, {quoted: mek})
+                      break					
 case 'linkgc':
 client.updatePresence(from, Presence.composing) 
 if (!isGroup) return reply(mess.only.group)
