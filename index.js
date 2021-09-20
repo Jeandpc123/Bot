@@ -1191,7 +1191,60 @@ case 'pornhub':
                       team = await fetchJson(`https://api-team-of-hero.herokuapp.com/api/textpro/pornhub?apikey=apiteam&texto1=${teks1}&texto2=${teks2}`)
                       buff = await getBuffer(team.resultado)
                       team.sendMessage(from, buff, image, {quoted: mek})
-                      break					
+                      break	
+				
+
+case 'map':
+                   data = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${body.slice(5)}`)
+                   hasil = await getBuffer(data.gambar)
+                   client.sendMessage(from, hasil, image, {quoted: mek, caption: `Resultados de *${body.slice(5)}*`})
+                   await limitAdd(sender)
+                   break
+	
+case 'grupoinfo':
+                    client.updatePresence(from, Presence.composing)
+                    if (!ownerNumber) return reply(mess.only.group)
+                    ppUrl = await client.getProfilePicture(from) // leave empty to get your own
+			        buffer = await getBuffer(ppUrl)
+		            client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NOME* : ${groupName}\n*MEMBRO* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESCRIÇÃO* : ${groupDesc}`})
+                    break					
+					
+
+case 'bot':
+			     	memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o ⚡Super Xandão⚡_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/Meliodas-rai/Bot\n\ncd Bot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
+					break
+					
+ case 'nomegp':
+                 if (!ownerNumber) return reply(`Este comando só pode ser usado em grupos`)
+		             if (args.length < 1) return reply (`o nome do grupo é: *${groupName}*`)
+		             break
+					
+case 'pinterest':
+                    tels = body.slice(11)
+					client.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=${tels}`, {method: 'get'})
+					reply(mess.wait)
+					n = JSON.parse(JSON.stringify(data));
+					nimek =  n[Math.floor(Math.random() * n.length)];
+					pok = await getBuffer(nimek)
+					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
+                    await limitAdd(sender)
+					break	
+					
+case 'persengay':
+					if (args.length < 1) return reply('O que você quer procurar um?')
+					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
+					reply('De acordo com o percentual gay:\n\n'+anu.desc+anu.persen)
+					break
+					
+					
+					
+					
+					
+
+					
 case 'linkgc':
 client.updatePresence(from, Presence.composing) 
 if (!isGroup) return reply(mess.only.group)
