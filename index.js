@@ -1540,7 +1540,7 @@ break
                 const userXp = getLevelingXp(sender)
 		sem = sender.replace('@s.whatsapp.net','')
 		if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
-                resul = `『 *TUS ESTADISTICAS 🆙* 』\n\nTus estadisticas en tiempo real 🕐\n\n├─ ❏ *NOMBRE:* ${sem}\n├─ ❏ *XP 🆙:* ${userXp}\n└─ ❏ *NIVEL:* ${userLevel}`
+                resul = `『 *TU LEVEL CONERO 🆙* 』\n\nkpis en tiempo real 🕐\n\n├─ ❏ *LLAMITA:* ${sem}\n├─ ❏ *XP 🆙:* ${userXp}\n└─ ❏ *Level conerito:* ${userLevel}`
                client.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
@@ -1553,7 +1553,7 @@ break
                 if (!isGroup) return reply(mess.only.admin)
                 if (args.length < 1) return reply('Digita *leveling 1 para activar este recurso')
                 if (args[0] === '1') {
-                    if (isLevelingOn) return reply('*La función de nivel ya estaba activa*')
+                    if (isLevelingOn) return reply('*La función de nivel ya estaba activa, pero si se va activalo*')
                     _leveling.push(groupId)
                     fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
