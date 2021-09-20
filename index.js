@@ -579,7 +579,7 @@ if (budy.includes("https://m.facebook.com/")){
 
 /******ENTRADA FIN DE FUNCIONES******/
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'ShanBot'; if (!author) author = 'Shanduy';	
+				if (!packname) packname = 'TERNA'; if (!author) author = 'TERNA';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -621,11 +621,6 @@ if (budy.includes("https://m.facebook.com/")){
 			switch(command) {
 		case 'help':
 		case 'menu':
-		uptime = process.uptime ()
-                putagg = await getBuffer(`https://i.ibb.co/Lpv80kh/Super-Xand-o.jpg`)
-                client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, sender, pushname2, time)})
-                break			
-					
 	        client.sendMessage(from, help(prefix, sender), text, {quoted: mek})
 		break
                 case 'otak':
@@ -1302,7 +1297,7 @@ break
 				
 //CREACION DE STICKERS Y VARIOS				
 				
-				case 'a':
+				case 'pavo':
 				case 'tucson':
 				case 'opa':
 				case 'shan':
@@ -1562,12 +1557,12 @@ break
                     _leveling.push(groupId)
                     fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
-                } else if (args[0] === '0') {
+                } else if (args[0] === '9') {
                     _leveling.splice(groupId, 1)
                     fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
                      reply(mess.leveloff)
                 } else {
-                    reply(` *Digita el comando 1 para activar, 0 para desactivar *\n * Ejemplo: ${prefix}leveling 1*`)
+                    reply(` *Digita el comando 1 para activar*\n * Ejemplo: ${prefix}leveling 1*`)
                 }
             break
                                 /*case 'nsfwtrap':
