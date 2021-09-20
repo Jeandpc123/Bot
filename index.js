@@ -1149,7 +1149,16 @@ client.groupMakeAdmin(from, mentioned)
 mentions(`Pedido recibido✅\n\nAgregando cargo como administrador : @${mentioned[0].split('@')[0]}`, mentioned, true)
 client.groupMakeAdmin(from, mentioned)
 }
-break				
+break	
+
+ case 'linkgp':
+ if (!isGroup) return reply(mess.only.group)
+ if (!isGroupAdmins) return reply(mess.only.admin)
+ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+ linkgc = await client.groupInviteCode(from)
+ reply('https://chat.whatsapp.com/'+linkgc)
+ break
+					
 				
 case 'linkgc':
 client.updatePresence(from, Presence.composing) 
