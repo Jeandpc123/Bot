@@ -777,7 +777,7 @@ break
 	
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
-                if (!isGroupAdmins) return reply(mess.only.Badmin)
+                if (!ownerNumber) return reply(mess.only.Badmin)
 		if (!isUser) return reply(mess.only.daftarB)
                 if (!isGroup) return reply(mess.only.group)
                 teks = body.slice(9)
@@ -1204,7 +1204,7 @@ case 'grupoinfo':
                     break					
 					
 
-case 'bot':
+case 'botcito':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos para instalar o ⚡Super Xandão⚡_\n\ntermux-setup-storage\n\npkg install git\n\npkg install ffmpeg\n\npkg install wget\n\npkg install nodejs\n\ngit clone https://github.com/Meliodas-rai/Bot\n\ncd Bot\n\nbash install.sh\n\nnpm start\n\n\nescaneie o qr code q ira aparecer\n\naperte o botão "Ctrl" depois aperte "C" no teclado\n\ndigite\n\npkg install pm2\n\nnpm i -g pm2\n\npm2 start index.js\n\npm2 monit\n\n_seja feliz meu parsa_😎\n\nOBS:vc vai precisar do termux e de 2 celulares'})
@@ -1345,7 +1345,7 @@ break
 //CREACION DE STICKERS Y VARIOS				
 				
 				case 'pavo':
-				case 'tucson':
+				case 'on':
 				case 'opa':
 				case 'a':
 				case 'nefasto':
@@ -1476,7 +1476,7 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=hamilton50`)
                 if (anu.error) return reply(anu.error)
-                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por shanduy*_`
+                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO EN MP3, si lo quieres en video loco, solo digita *you (link del video) ⚠*\n\n_*Servicio shanduy ft botcito*_`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -1490,14 +1490,14 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=shanduy50`)
                 if (anu.error) return reply(anu.error)
-                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por shanduy*_`
+                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU MP3,si lo quieres en video loco, solo digita *you(link del video) ⚠*\n\n_*Servicio por shanduy ft botcito *_`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
                 client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
                 break
                                 
-		case 'ytmp4':
+		case 'you':
 		if (args.length < 1) return reply('Donde esta la url del video?\n\nEjemplo: *ytmp4 www.youtube.com/xxxxxxxxx')
 		if (!isUser) return reply(mess.only.daftarB)
 		reply(mess.only.mpv)
@@ -1519,12 +1519,12 @@ break
 case 'terna':
 client.updatePresence(from, Presence.composing)
 if (isUser) return reply('Ya estas registrado 🧐')
-if (args.length < 1) return reply(`Incorrecto ❎\nComando: ${prefix}daftar Nombre\n\nEjemplo: ${prefix}daftar shanduy`)
+if (args.length < 1) return reply(`Incorrecto ❎\nComando: ${prefix}daftar Nombre\n\nEjemplo: ${prefix}terna mi chero`)
 var reg = body.slice(8)
 var nombre = reg.split("|")[0];
 user.push(sender)
 fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: MALASO 🥸\`\`\`\n\n\`\`\`Hora EC: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários: ${user.length}\`\`\``, text, {quoted: mek})
+client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: dibujito de terna 🥸\`\`\`\n\n\`\`\`Hora EC: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários: ${user.length}\`\`\``, text, {quoted: mek})
 break
                                 
 //FIN DE REGISTRO  
@@ -1734,7 +1734,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'pits':
+					case 'pucp':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animefeets`, {method: 'get'})
@@ -1804,15 +1804,15 @@ break
                   }
 
 		if (budy.includes(`bot`)) {
-                  reply(`ok, pensamiento Gonzalo`)
+                  reply(`*ok, pensamiento Gonzalo*`)
                   }
 
 		if (budy.includes(`Bien gracias y tu?`)) {
-                  reply(`Opa yazmin te extrañe :(`)
+                  reply(`todo relax loquito :(`)
                   }
 					
-		if (budy.includes(`Opa`)) {
-                  reply(`opaaaaa`)
+		if (budy.includes(`ceilo`)) {
+                  reply(`*Lil Peep*`)
                   }
                  
 		if (budy.includes(`Fua`)) {
