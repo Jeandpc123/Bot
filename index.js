@@ -692,7 +692,7 @@ break
 case 'desban':
 if (!isGroup) return reply(mess.only.group)
 if (!ownerNumber) return reply(mess.only.admin)
-if (!ownerNumber) return reply(mess.only.Badmin)
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '*\n'
