@@ -689,9 +689,10 @@ susp = `『 DESBANEADO ✅ 』\n\n◉Nombre: @${mentioned[0].split('@')[0]}\n\n*
 mentions(`${susp}`, mentioned, true)   
 break		
 
-case 'desban':
+			
+case 'ban':
 if (!isGroup) return reply(mess.only.group)
-if (!ownerNumber) return reply(mess.only.admin)
+if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -699,11 +700,11 @@ pru = '*\n'
 for (let _ of mentioned) {
 pru += `@${_.split('@')[0]}\n`
 }
-ban.splice(`${mentioned}`)
+ban.push(`${mentioned}`)
 fs.writeFileSync('./database/banned.json', JSON.stringify(ban))
-susp = `『 DESBANEADO POR TERNA ✅ 』\n\n◉Nombre: @${mentioned[0].split('@')[0]}\n\n*Se te a retirado el BAN ya puedes usar el bot*`
+susp = `『 BANEADO 🚫 』\n\n◉Nombre: @${mentioned[0].split('@')[0]}\n◉Razon: Spam\n\n*Usted a sido baneado del uso del bot, no podra usar el bot hasta nuevo aviso*`
 mentions(`${susp}`, mentioned, true)   
-break		
+break	
 			
 //FIN DE FUNCIONES BAN Y DESBAN					
 					
