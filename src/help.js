@@ -1,16 +1,12 @@
 const help = (prefix) => {
 	return `
 
-⌜ *ѕнαηвσт ву ѕнαη∂υу* ⌟  
+⌜ *By botcito* ⌟  
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: ѕнαη∂υу™ 
-   ○ Como instalar el bot: https://www.youtube.com/watch?v=2LQSzEbpJ-M
-   ○ Instagram: https://www.instagram.com/thepavos
-
 ◉ *PARA USAR EL BOT*
-Registrate con el comando ${prefix}daftar y tu nombre
+Registrate con el comando ${prefix}jorge elcurioso
 
 ◉ *NUEVOS COMANDOS*
 ○ ${prefix}banmenu
@@ -33,11 +29,6 @@ Descargar musica y videos
 Conoce la versión de tu bot
 ○ ${prefix}welmenu
 Comando de bienvenida solo grupos
-
-◉ *RESUELVE TUS DUDAS*
-  ║
-  ╠ ○ ${prefix}creador
-  ╚ Dudas o problemas aqui
 
 ◉ *CREAR STICKERS*
   ║
@@ -106,7 +97,7 @@ No te olvides de seguirme en instagram flaco ;)
 
 
 _*by shanduy*_
-
+*By Terna-DPC
 
 ⌜ *ごきげんよう :)* ⌟ 
 `
