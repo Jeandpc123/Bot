@@ -257,11 +257,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `HOLAA!! @${num.split('@')[0]} ¿COMO ESTAS?😃\n\n『Bienvenido A *${mdata.subject}*』\n\nUn gusto conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Solo disfrutar de este grupo y divertite 🥳*`
+				teks = `HOLAA!! @${num.split('@')[0]} ¿COMO ESTAS?😃\n\n『Bienvenido A *${mdata.subject}*』\n\nUn gusto conocerte Gil, tienes suerte que te de de la bienvenida 🤗\n\n_Recuerda pasarlo paja no hagas huevadas como spam ya sabes no seas huevon  🧐_\n\n*digita *help para ver los comandos y de paso el *leveling 1 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Bueno, se fue @${num.split('@')[0]} 👋\n\nQue dios lo bendiga 😎`
+				teks = `Bueno, se nos fue un marciano  @${num.split('@')[0]} 👋\n\nAdios Marcianito 😎`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -306,7 +306,7 @@ async function starts() {
 				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
 				foto: 'Calmao estoy cambiando la foto del grupo\n\nPor favor no hacer spam👏\n\n_*by shanduy*_',
 				unir: 'Espere por favor 🕖\n\nEstoy tratando de unirlo\n\n*Recuerda, si no lo uno es por que el usuario tiene bloqueado la funcion para unirlo a grupos*\n\n_*by shanduy*_',
-                                levelnoton: '❬ ❎ ❭ *Level no esta activado lco :( digita *leveling 1 *',
+                                levelnoton: '❬ ❎ ❭ *Level no esta activado lco digita  *leveling 1 *',
 				levelnol: '*Nivel* 0 ',
 				error: {
 					stick: '[❎] Falló, se produjo un error al convertir la imagen en una pegatina',
@@ -329,7 +329,7 @@ async function starts() {
 					insta: 'Calmao 😎\n\n*nAguarde un momento, por favor\n\n_*by botcito*_',
 					musica: 'Pero what chucha fue lco😎\n\n*ya TU sabes como es para la musica lco digita biene el nombre de la musica o  el link del video de you*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\n_*by botcito*_',
 					musica2: 'Pero what chucha fue lco😎\n\n* ya TU sabes como es para la musica lco digita biene el nombre de la musica o  el link del video de you*\n\n*Si el comando *play2*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\n_*by botcito*_',
-					daftarB: `「PERO WHAT CHUCHA FUE LOCO 😎 NO ESTAS EN LISTA」\n\nPA NO QUE SEAS PARTE DEL  ✋🥸🤚\n\n*CLUB* y seas mas chuchon  escribe el siguente comando\n\nComando: ${prefix}jorge tas pal centro\nEjemplo: ${prefix}jorge tas pal pingolo`,
+					daftarB: `「PERO WHAT CHUCHA FUE LOCO 😎 NO ESTAS EN LISTA」\n\nPA NO QUE SEAS PARTE DEL *CLUB* y seas pingon ✋🥸🤚\n\n escribe el siguente comando\n\nComando: ${prefix}terna nombre\nEjemplo: ${prefix}terna es mi chero`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -1541,9 +1541,9 @@ break
 						reply('❌ *ERROR* ❌')
 					}
 					break
-                              	case 'nsfw':
+                              	case 'loli':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!ownerNumber) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Digita 1 para activar los NSFW')
 					if (Number(args[0]) === 1) {
 						if (isNsfw) return reply('Recursos Activados ✅')
@@ -1646,7 +1646,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break*/
-					case 'nsfwbobs': 
+					case 'bobs': 
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/biganimetiddies`, {method: 'get'})
@@ -1657,7 +1657,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwblowjob':
+					case 'host':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob`, {method: 'get'})
@@ -1668,7 +1668,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwneko':
+					case 'neko':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://api.computerfreaker.cf/v1/neko`, {method: 'get'})
@@ -1690,7 +1690,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 					break*/
-				case 'nsfwass':
+				case 'bob':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`'https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
@@ -1701,7 +1701,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwsidebobs':
+					case 'sqr':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/sideoppai`, {method: 'get'})
@@ -1712,7 +1712,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 					    break
-					case 'nsfwahegao':
+					case 'gao':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/ahegao`, {method: 'get'})
@@ -1723,7 +1723,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwthighs':
+					case 'feets':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animethighss`, {method: 'get'})
@@ -1734,7 +1734,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-					case 'nsfwfeets':
+					case 'pits':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animefeets`, {method: 'get'})
@@ -1756,7 +1756,7 @@ break
 							reply('❌ *ERROR* ❌')
 						}
 						break
-						case 'nsfwtoin':
+						case 'pucp':
 						try {
 							if (!isNsfw) return reply('❌ *NSFW Desactivado* ❌')
 							res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
@@ -1803,8 +1803,8 @@ break
                   reply(`Miren a este boludito`)
                   }
 
-		if (budy.includes(`Gracias`)) {
-                  reply(`De nada padre`)
+		if (budy.includes(`bot`)) {
+                  reply(`ok, pensamiento Gonzalo`)
                   }
 
 		if (budy.includes(`Bien gracias y tu?`)) {
