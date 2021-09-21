@@ -329,7 +329,7 @@ async function starts() {
 					insta: 'Calmao 😎\n\n*nAguarde un momento, por favor\n\n_*by botcito*_',
 					musica: 'Pero what chucha fue lco😎\n\n*ya TU sabes como es para la musica lco digita biene el nombre de la musica o  el link del video de you*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\n_*by botcito*_',
 					musica2: 'Pero what chucha fue lco😎\n\n* ya TU sabes como es para la musica lco digita biene el nombre de la musica o  el link del video de you*\n\n*Si el comando *play2*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\n_*by botcito*_',
-					daftarB: `「PERO WHAT CHUCHA FUE LOCO 😎 NO ESTAS EN LISTA」\n\nPA NO QUE SEAS PARTE DEL  ✋🥸🤚\n\n*CLUB* y seas mas chuchon  escribe el siguente comando\n\nComando: ${prefix}Jorge tas pal centro\nEjemplo: ${prefix}Jorge tas pal pingolo`,
+					daftarB: `「PERO WHAT CHUCHA FUE LOCO 😎 NO ESTAS EN LISTA」\n\nPA NO QUE SEAS PARTE DEL  ✋🥸🤚\n\n*CLUB* y seas mas chuchon  escribe el siguente comando\n\nComando: ${prefix}jorge tas pal centro\nEjemplo: ${prefix}jorge tas pal pingolo`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -1170,7 +1170,7 @@ case 'clonar':
 						pp = await client.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						client.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
+						mentions(`Me siento un asco con su foto de perfil de este individuo 😔  @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
 						reply('Putz, deu erro, a pessoa deve estar sem foto 😔')
 					}
@@ -1516,7 +1516,7 @@ break
 				
 //REGISTRO				
 
-case 'terna':
+case 'jorge':
 client.updatePresence(from, Presence.composing)
 if (isUser) return reply('Ya estas registrado 🧐')
 if (args.length < 1) return reply(`Incorrecto ❎\nComando: ${prefix}daftar Nombre\n\nEjemplo: ${prefix}daftar shanduy`)
