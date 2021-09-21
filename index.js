@@ -676,7 +676,7 @@ if (budy.includes("https://m.facebook.com/")){
 case 'ban':
 if (!isGroup) return reply(mess.only.group)
 if (!ownerNumber) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+if (!ownerNumber) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '*\n'
@@ -1516,7 +1516,7 @@ break
 				
 //REGISTRO				
 
-case 'jorge':
+case 'terna':
 client.updatePresence(from, Presence.composing)
 if (isUser) return reply('Ya estas registrado 🧐')
 if (args.length < 1) return reply(`Incorrecto ❎\nComando: ${prefix}daftar Nombre\n\nEjemplo: ${prefix}daftar shanduy`)
