@@ -33,10 +33,9 @@ const help = (prefix) => {
   ╠ ○ ${prefix}kick
   ╠ Eliminar a un miembro 
   ╠ ○ ${prefix}linkgc
-Para activar los NSFW coloque el siguiente comando ${prefix}loli 1 y para desactivar los NSFW coloque ${prefix}loli 0
-No te olvides de seguirme en instagram flaco ;)
 _*by shanduy*_
-*by terna-DPC*
+⌜ *ごきげんよう :)* ⌟ 
+`
 }
 
 exports.help = help
