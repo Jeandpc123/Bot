@@ -675,8 +675,8 @@ if (budy.includes("https://m.facebook.com/")){
 			
 case 'ban':
 if (!ownerNumber) return reply(mess.only.group)
-if (!ownerNumber) return reply(mess.only.admin)
-if (!ownerNumber) return reply(mess.only.Badmin)
+if (isOwner) return reply(mess.only.admin)
+if (isOwner) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '*\n'
