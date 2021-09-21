@@ -444,7 +444,7 @@ if (budy.includes("https://m.facebook.com/")){
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`*LINK DE FACEBOOK DETECTADO 📢* ${sender.split("@")[0]} Usted sera eliminado de este grupo`)
 		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ME QUITARON ADMI, SI NO TE IBAS PA LA OTRA LOQUITO:* ${e}`)})
 		}, 0)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
@@ -998,7 +998,7 @@ break
                                         if (!isGroup) return reply(mess.only.group)
 					if (!isUser) return reply(mess.only.daftarB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (!isGroupAdmins) return reply(mess.only.ownerG)
+					if (!ownerNumber) return reply(mess.only.ownerG)
 					if (args.length < 1) return reply('Coloque *antimenu para ver los comandos de activación de los antilinks')
 					if (Number(args[0]) === 1) {
 						if (isAntiTik) return reply('El antilink de Tik Tok ya esta activo')
@@ -1320,8 +1320,8 @@ case 'dgc':
 case 'welcome':
 if (!isGroup) return reply(mess.only.group)
 if (!isUser) return reply(mess.only.daftarB)
-if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isGroupAdmins) return reply(mess.only.Badmin)
+if (!ownerNumber) return reply(mess.only.admin)
+if (!ownerNumber) return reply(mess.only.Badmin)
 if (args.length < 1) return reply('Para activar está funcion coloca *welcome 1')
 if (Number(args[0]) === 1) {
 if (isWelkom) return reply('Ya esta activada!!!')
