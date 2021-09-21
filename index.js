@@ -673,21 +673,21 @@ if (budy.includes("https://m.facebook.com/")){
 
 //FUNCIONES DE BAN Y DESBAN			
 			
-case 'ban':
-if (!ownerNumber) return reply(mess.only.group)
-if (isOwner) return reply(mess.only.admin)
-if (isOwner) return reply(mess.only.Badmin)
+case 'desban':
+if (!isGroup) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.admin)
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '*\n'
 for (let _ of mentioned) {
 pru += `@${_.split('@')[0]}\n`
 }
-ban.push(`${mentioned}`)
+ban.splice(`${mentioned}`)
 fs.writeFileSync('./database/banned.json', JSON.stringify(ban))
-susp = `『 BANEADO POR TERNA 🚫 』\n\n◉Nombre: @${mentioned[0].split('@')[0]}\n◉Razon: Spam\n\n*Usted a sido baneado del uso del bot, no podra usar el bot hasta nuevo aviso*`
+susp = `『 DESBANEADO ✅ 』\n\n◉Nombre: @${mentioned[0].split('@')[0]}\n\n*Se te a retirado el BAN ya puedes usar el bot*`
 mentions(`${susp}`, mentioned, true)   
-break
+break		
 
 case 'desban':
 if (!isGroup) return reply(mess.only.group)
