@@ -674,7 +674,7 @@ if (budy.includes("https://m.facebook.com/")){
 //FUNCIONES DE BAN Y DESBAN			
 			
 case 'ban':
-if (!isGroup) return reply(mess.only.group)
+if (!ownerNumber) return reply(mess.only.group)
 if (!ownerNumber) return reply(mess.only.admin)
 if (!ownerNumber) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
