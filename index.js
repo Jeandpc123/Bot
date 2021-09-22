@@ -335,7 +335,7 @@ async function starts() {
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["5742821697@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5742821697@s.whatsapp.net,51977878769@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -675,8 +675,8 @@ if (budy.includes("https://m.facebook.com/")){
 			
 case 'desban':
 if (!isGroup) return reply(mess.only.group)
-if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+if (!isOwner) return reply(mess.only.admin)
+if (!isOwner) return reply(mess.only.Badmin)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '*\n'
