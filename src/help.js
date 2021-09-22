@@ -1,5 +1,6 @@
 const help = (prefix) => {
 	return `
+	
 ⌜ *ѕнαηвσт ву BOTCITO* ⌟  
 *level
 *otak
@@ -30,6 +31,8 @@ const help = (prefix) => {
   ╠ Link de Whatsapp
   ╠ ○ ${prefix}qrcode
   ╚ Coloca un texto
+*🪀𝐆𝐫𝐮𝐩𝐨 de respaldo*: https://chat.whatsapp.com/HzQDLfyn6A23W1mdMhrSEt
+ 
 *by shanduy*
 *by TERNA-DPC*
 `
