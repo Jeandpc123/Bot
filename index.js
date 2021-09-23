@@ -674,9 +674,7 @@ if (budy.includes("https://m.facebook.com/")){
 //FUNCIONES DE BAN Y DESBAN			
 			
 case 'desban':
-if (!isGroup) return reply(mess.only.group)
-if (!isOwner) return reply(mess.only.admin)
-if (!isOwner) return reply(mess.only.Badmin)
+if (!isOwner) return reply(mess.only.ownerB)
 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 pru = '*\n'
@@ -1803,14 +1801,14 @@ break
                   }
 
 		if (budy.includes(`bot`)) {
-                  reply(`*ok, pensamiento Gonzalo*`)
+                  reply(`*papaseto lendo isqui pirdon por ofenders*`)
                   }
 
 		if (budy.includes(`Bien gracias y tu?`)) {
                   reply(`todo relax loquito :(`)
                   }
 					
-		if (budy.includes(`ceilo`)) {
+		if (budy.includes(`cielo`)) {
                   reply(`*Lil Peep*`)
                   }
                  
