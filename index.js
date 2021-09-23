@@ -309,7 +309,7 @@ async function starts() {
                                 levelnoton: '❬ ❎ ❭ *Level no esta activado lco digita  *leveling 1 *',
 				levelnol: '*Nivel* 0 ',
 				error: {
-					stick: '[❎] Falló, se produjo un error al convertir la imagen en una pegatina',
+					stick: '[❎] Mano no hay sticker por el momento el servidor no responde ATTE:Tu chero',
 					yt: 'Falló en el link o se produjo un error al momento de descargar el video',
 					unire: 'Por favor, no coloques (+) solo pon el numero con el codigo de area de su pais\n\nEjemplo: *unir 52xxxxxxxxx',
 					Iv: 'Este no es un link de youtube'
