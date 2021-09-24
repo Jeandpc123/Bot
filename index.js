@@ -619,8 +619,8 @@ if (budy.includes("https://m.facebook.com/")){
 
 			}
 			switch(command) {
-		case 'help':
-		case 'menu':
+		case 'ayudams':
+		case 'ayunosd':
 	        client.sendMessage(from, help(prefix, sender), text, {quoted: mek})
 		break
                 case 'otak':
@@ -1223,6 +1223,25 @@ case 'pinterest':
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
                     await limitAdd(sender)
 					break	
+					
+					case 'marcianito':
+					case 'help':
+					case 'menu':
+				    if (!isGroup) return reply(mess.only.group)
+					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdU0UmT8RigE3Hbr80gmigjb2AdnPJklcQ3A&usqp=CAU`)
+					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/11/novinha-petuda-fotos-4.jpg`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWoYHFA_SDgUip6MtvimWRdub_lshAn5Edg&usqp=CAU`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvLmbqW9LeOCpXiGxgu3By4eQEmJM2Xp26Q&usqp=CAU`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
+					buffer = await getBuffer(`https://i.ibb.co/QXh2qq7/9193b220-130c-4821-a4a1-c61955956ea0-2.jpg`)
+					buffer = await getBuffer(`https://i.ibb.co/q7Q3vLN/7b0b0974-87e7-4d9c-aee9-6f2d84b5c1c8.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Me presento soy el @patrick🐦 mas conocido como el *marcianito* de las poessias.Hoy es noche de sexo y voy a cumplir tus fantasias'}
+					buffer = await getBuffer(`https://i.ibb.co/vYhFCzM/123123.png`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*PAPA LUJAN DONDE ESTAS 😭😭 HOY ES MI CUMPLEAÑOS Y NO ESTAS PRESENTE* '})
+					buffer = await getBuffer(`https://i.ibb.co/jJnhbWM/Web-Photo-Editor-1.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*BOTA TU GAAA*'})
+					break
 					
 case 'persengay':
 					if (args.length < 1) return reply('O que você quer procurar um?')
