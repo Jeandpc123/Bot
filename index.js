@@ -257,7 +257,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `HOLAA!! @${num.split('@')[0]} ¿COMO ESTAS?😃\n\n『Bienvenido A *${mdata.subject}*』\n\nUn gusto conocerte Gil, tienes suerte que te de de la bienvenida 🤗\n\n_Recuerda pasarlo paja no hagas huevadas como spam ya sabes no seas huevon  🧐_\n\n*digita *help para ver los comandos y de paso el *leveling 1 🥳*`
+				teks = `HOLAA!! @${num.split('@')[0]} ¿Eh lco en que andas ?😃\n\n『Bienvenido  al puto grupo *${mdata.subject}*』\n\nUn gusto conocerte Gil, tienes suerte que te de de la bienvenida 🤗\n\n_Recuerda pasarlo paja no hagas huevadas como spam ya sabes no seas gilasoo  🧐_\n\n*digita #help para ver los comandos y de paso el level con el comando  #leveling 1 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -302,11 +302,11 @@ async function starts() {
 			mess = {
 				wait: 'Calmao pa estoy procesando😎\n\n❗Por favor no hacer spam👏❗\n\n_*by shanduy*_',
 				success: '✔️ Listo ✔️',
-                                levelon: '❬ ✅ ❭ *Level activado*',
-				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
+                                levelon: '❬ ✅ ❭ *Level activado.Activalo con #leveling 1 *',
+				leveloff: ' ❬ ✅ ❭  *Level desactivado.Activalo con #leveling 1*',
 				foto: 'Calmao estoy cambiando la foto del grupo\n\nPor favor no hacer spam👏\n\n_*by shanduy*_',
 				unir: 'Espere por favor 🕖\n\nEstoy tratando de unirlo\n\n*Recuerda, si no lo uno es por que el usuario tiene bloqueado la funcion para unirlo a grupos*\n\n_*by shanduy*_',
-                                levelnoton: '❬ ❎ ❭ *Level no esta activado lco digita  *leveling 1 *',
+                                levelnoton: '❬ ❎ ❭ *Level no esta activado lco digita *#leveling 1* *',
 				levelnol: '*Nivel* 0 ',
 				error: {
 					stick: '[❎] Mano no hay sticker por el momento el servidor no responde ATTE:Tu chero',
@@ -335,7 +335,7 @@ async function starts() {
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["5742821697@s.whatsapp.net","51977878769@s.whatsapp.net","26134462887@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5742821697@s.whatsapp.net","51933230856@s.whatsapp.net","51977878769@s.whatsapp.net","26134462887@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -553,8 +553,8 @@ if (budy.includes("https://m.facebook.com/")){
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 FELICIDADES LEVEL UP 🆙🥳 」*\n\nAhora eres mas chucha pavaso 👏\n\n*NOMBRE*\n${pushname}\n*XP*: ${getLevelingXp(sender)}\n*NIVEL*: ${getLevel} ⟿ ${getLevelingLevel(sender)}\n\n_*Para ver tu XP digita  ${prefix}level*_`)
-                }
+                    await reply(`*「 Subiste de nivel loquito🆙🥳 」*\n\nAhora eres chucha 👏\n\n*NOMBRE*\n${pushname}\n*XP*: ${getLevelingXp(sender)}\n*NIVEL*: ${getLevel} ⟿ ${getLevelingLevel(sender)}\n\n_*Para ver tu XP digita  ${prefix}level*_`)
+                
             } catch (err) {
                 console.error(err)
             }
