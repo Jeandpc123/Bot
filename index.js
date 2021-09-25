@@ -1234,11 +1234,15 @@ case 'pinterest':
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWoYHFA_SDgUip6MtvimWRdub_lshAn5Edg&usqp=CAU`)
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvLmbqW9LeOCpXiGxgu3By4eQEmJM2Xp26Q&usqp=CAU`)
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
+					buffer = await getBuffer(`https://i.ibb.co/jJnhbWM/Web-Photo-Editor-1.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Llege  @+51935496981 mas conocido como el *marcianito* el que te lo hace bien rico RAA*'})
 					buffer = await getBuffer(`https://i.ibb.co/q7Q3vLN/7b0b0974-87e7-4d9c-aee9-6f2d84b5c1c8.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Me presento soy el @patrick🐦 mas conocido como el *marcianito* de las poessias.Hoy es noche de sexo y voy a cumplir tus fantasias'})
 					buffer = await getBuffer(`https://i.ibb.co/jJnhbWM/Web-Photo-Editor-1.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Llege  @+51935496981 mas conocido como el *marcianito* el que te lo hace bien rico RAA*'})
+					
 					break
+					
 					
 case 'persengay':
 					if (args.length < 1) return reply('O que você quer procurar um?')
