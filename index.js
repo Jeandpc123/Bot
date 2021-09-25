@@ -302,11 +302,11 @@ async function starts() {
 			mess = {
 				wait: 'Calmao pa estoy procesando😎\n\n❗Por favor no hacer spam👏❗\n\n_*by shanduy*_',
 				success: '✔️ Listo ✔️',
-                                levelon: '❬ ✅ ❭ *Level activado.Activalo con #leveling 1 *',
-				leveloff: ' ❬ ✅ ❭  *Level desactivado.Activalo con #leveling 1*',
+                                levelon: '❬ ✅ ❭ *Level activado*',
+				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
 				foto: 'Calmao estoy cambiando la foto del grupo\n\nPor favor no hacer spam👏\n\n_*by shanduy*_',
 				unir: 'Espere por favor 🕖\n\nEstoy tratando de unirlo\n\n*Recuerda, si no lo uno es por que el usuario tiene bloqueado la funcion para unirlo a grupos*\n\n_*by shanduy*_',
-                                levelnoton: '❬ ❎ ❭ *Level no esta activado lco digita *#leveling 1* *',
+                                levelnoton: '❬ ❎ ❭ *Level no esta activado digita #leveling 1 *',
 				levelnol: '*Nivel* 0 ',
 				error: {
 					stick: '[❎] Mano no hay sticker por el momento el servidor no responde ATTE:Tu chero',
@@ -553,7 +553,7 @@ if (budy.includes("https://m.facebook.com/")){
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 Subiste de nivel loquito🆙🥳 」*\n\nAhora eres chucha 👏\n\n*NOMBRE*\n${pushname}\n*XP*: ${getLevelingXp(sender)}\n*NIVEL*: ${getLevel} ⟿ ${getLevelingLevel(sender)}\n\n_*Para ver tu XP digita  ${prefix}level*_`)
+                    await reply(`*「 Subiste de nivel🆙🥳 」*\n\nAhora eres un chucha 👏\n\n*NOMBRE*\n${pushname}\n*XP*: ${getLevelingXp(sender)}\n*NIVEL*: ${getLevel} ⟿ ${getLevelingLevel(sender)}\n\n_*Para ver tu XP digita  ${prefix}level*_`)
                 
             } catch (err) {
                 console.error(err)
