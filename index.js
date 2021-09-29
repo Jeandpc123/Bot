@@ -306,7 +306,7 @@ async function starts() {
 				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
 				foto: 'Calmao estoy cambiando la foto del grupo\n\nPor favor no hacer spam👏\n\n_*by shanduy*_',
 				unir: 'Espere por favor 🕖\n\nEstoy tratando de unirlo\n\n*Recuerda, si no lo uno es por que el usuario tiene bloqueado la funcion para unirlo a grupos*\n\n_*by shanduy*_',
-                                levelnoton: '❬ ❎ ❭ *Level no esta activado digita #leveling 1 *',
+                                levelnoton: '❬ ❎ ❭ *digita #leveling 1*',
 				levelnol: '*Nivel* 0 ',
 				error: {
 					stick: '[❎] Mano no hay sticker por el momento el servidor no responde ATTE:Tu chero',
@@ -327,8 +327,8 @@ async function starts() {
 					mpa: 'Eh loco esta que pasa esta nota, regreso con tu descarga 🥴\n\n*Estoy descargando tu cancion 🔄*\n\nAguarde un momento, por favor\n\n_*by botcito*_',
                                         mpv: 'Eh manito ✋🥸🤚\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento conero \n\n_*by botcito*_',
 					insta: 'Calmao 😎\n\n*nAguarde un momento, por favor\n\n_*by botcito*_',
-					musica: 'Pero what chucha fue lco😎\n\n*ya TU sabes como es para la musica lco digita biene el nombre de la musica o  el link del video de you*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\n_*by botcito*_',
-					musica2: 'Pero what chucha fue lco😎\n\n* ya TU sabes como es para la musica lco digita biene el nombre de la musica o  el link del video de you*\n\n*Si el comando *play2*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\n_*by botcito*_',
+					musica: 'Espere ⌛..⏳  piraña \n\n*Si el comando *play no funciona utiliza el comando *play2*\n\n_*by botcito*_',
+					musica2: 'Espere ⌛..⏳  piraña \n\n*Si el comando *play no funciona utiliza el comando *play2*\n\n_*by botcito*_',
 					daftarB: `「PERO WHAT CHUCHA FUE LOCO 😎 NO ESTAS EN LISTA」\n\nPA NO QUE SEAS PARTE DEL *CLUB* y seas pingon ✋🥸🤚\n\n escribe el siguente comando\n\nComando: ${prefix}terna nombre\nEjemplo: ${prefix}terna es mi chero`,
 				}
 			}
@@ -1239,7 +1239,7 @@ case 'pinterest':
 					buffer = await getBuffer(`https://i.ibb.co/q7Q3vLN/7b0b0974-87e7-4d9c-aee9-6f2d84b5c1c8.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Me presento soy  @patrick🐦 mas conocido como el *marcianito* Hoy es noche de sexo y voy a cumplir tus fantasias'})
 					buffer = await getBuffer(`https://i.ibb.co/KhKG6J0/Whats-App-Image-2021-09-29-at-00-41-42-1.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ya compraron su jugetes, dscto con el codigo *marcianito*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ya compraron su juguetes en la tienda del *marcianito*'})
 					
 					break
 					
