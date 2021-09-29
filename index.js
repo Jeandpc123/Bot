@@ -1237,9 +1237,9 @@ case 'pinterest':
 					buffer = await getBuffer(`https://i.ibb.co/jJnhbWM/Web-Photo-Editor-1.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Llege  @+51935496981 mas conocido como el *marcianito* el que te lo hace bien rico RAA*'})
 					buffer = await getBuffer(`https://i.ibb.co/q7Q3vLN/7b0b0974-87e7-4d9c-aee9-6f2d84b5c1c8.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Me presento soy el @patrick🐦 mas conocido como el *marcianito* de las poessias.Hoy es noche de sexo y voy a cumplir tus fantasias'})
-					buffer = await getBuffer(`https://i.ibb.co/jJnhbWM/Web-Photo-Editor-1.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Llege  @+51935496981 mas conocido como el *marcianito* el que te lo hace bien rico RAA*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Me presento soy  @patrick🐦 mas conocido como el *marcianito* Hoy es noche de sexo y voy a cumplir tus fantasias'})
+					buffer = await getBuffer(`https://i.ibb.co/KhKG6J0/Whats-App-Image-2021-09-29-at-00-41-42-1.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ya compraron su jugetes, dscto con el codigo *marcianito*'})
 					
 					break
 					
